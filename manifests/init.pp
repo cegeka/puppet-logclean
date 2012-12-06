@@ -1,5 +1,5 @@
 #
-class logclean {
+class logclean($logconfig=undef) {
 
   file { '/etc/cron.daily/logclean':
     ensure  => present,
@@ -9,11 +9,8 @@ class logclean {
   }
 
   file { '/etc/logclean.conf':
-    ensure => present,
-    source => [
-                "puppet:///modules/logclean/logclean.conf.${::hostname}",
-                'puppet:///modules/logclean/logclean.conf',
-              ]
+    ensure  => present,
+    content => template('logclean/logclean.conf.erb'),
   }
 
   file { '/usr/local/scripts/logclean':
