@@ -1,5 +1,5 @@
 #
-class logclean($logconfig=undef) {
+class logclean( $logconfig = [] ) {
 
   file { '/etc/cron.daily/logclean':
     ensure  => present,
