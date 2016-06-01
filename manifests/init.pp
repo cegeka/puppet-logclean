@@ -1,6 +1,8 @@
 #
 class logclean( $logconfig = [] ) {
 
+  File <| title == '/usr/local/scripts' |>
+
   file { '/etc/cron.daily/logclean':
     ensure  => present,
     mode    => '0755',

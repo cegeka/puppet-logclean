@@ -5,6 +5,10 @@ describe 'logclean' do
   describe 'running puppet code' do
     it 'should work with no errors' do
       pp = <<-EOS
+
+        file { '/usr/local/scripts':
+          ensure => 'directory',
+        }
         class { 'logclean':
           logconfig => [
             '/var/log/something-*.log;30',
