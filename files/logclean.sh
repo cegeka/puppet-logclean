@@ -10,7 +10,7 @@ for file in `cat ${config}`; do
 	logfile=$(basename "${log}")
 	retention=$(printf "${file}" | cut -f2 -d";")
 
-	find "${logfolder}" -name "${logfile}" -mtime +${retention} -exec rm -f {} \;
+	find "${logfolder}" -name "${logfile}" -type f -mtime +${retention} -exec rm -f {} \;
 	returncode=$?
 
 	if [ ${returncode} -eq 1 ]; then
