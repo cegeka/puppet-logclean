@@ -1,5 +1,5 @@
 = puppet-logclean module
 
-{<img src='https://codex.cegeka.be/jenkins/job/puppet-logclean/badge/icon' />}[https://codex.cegeka.be/jenkins/job/puppet-logclean/]
+{<img src='https://jenkins-iac.cegeka.be/job/puppet-logclean/badge/icon' />}[https://jenkins-iac.cegeka.be/job/puppet-logclean/]
 
 This is the logclean module.
