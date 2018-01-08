@@ -3,3 +3,4 @@
 {<img src='https://jenkins-iac.cegeka.be/job/puppet-logclean/badge/icon' />}[https://jenkins-iac.cegeka.be/job/puppet-logclean/]
 
 This is the logclean module.
+
